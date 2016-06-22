@@ -1,0 +1,19 @@
+Linux命令行提示路经太长，影响显示和操作，修改方式如下：
+
+1、vim ~/.bashrc(说明：\u是当前用户,\h是当前主机名,\w表示显示当前完整工作路经,\W表示显示当前工作路经,$是显示符)
+
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+fi
+
+修改为(显示当前工作路经)：
+
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\W\$ '
+fi
+
+2、source ~/.bashrc 使得当前修改生效
