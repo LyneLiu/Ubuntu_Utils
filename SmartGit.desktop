@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=SmartGit
+Exec=env SMARTGIT_JAVA_HOME=/usr/local/jdk/jre/ /usr/local/smartgit/bin/smartgit.sh
+Icon=/usr/local/smartgit/bin/smartgit-64.png
+Name[en_US]=SmartGit
