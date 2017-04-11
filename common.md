@@ -25,3 +25,7 @@ update-java-alternatives --list
 
 5、设置默认的jdk
 sudo update-alternatives --config java
+
+
+参考链接：
+http://www.cnblogs.com/a2211009/p/4265225.html
