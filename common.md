@@ -20,3 +20,8 @@ sudo apt-get update
 sudo apt-get install oracle-java8-installer
 （sudo apt-get install openjdk-8-jdk）
 
+4、查看已安装的jdk等工具
+update-java-alternatives --list
+
+5、设置默认的jdk
+sudo update-alternatives --config java
