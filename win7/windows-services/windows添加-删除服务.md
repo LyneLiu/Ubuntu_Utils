@@ -14,17 +14,16 @@ NonExistent——indicates the service is not currently installed
 Started——to indicate the service is currently running
 Stopped——to indicate that the service is installed but not currently running.
 
-2、创建ServiceUtil.xml配置文件（文件名需要与exe文件名一致）
-<service>  
- <id>nginx</id>  
- <name>nginx</name>  
+2、创建ServiceUtil.xml配置文件（文件名需要与exe文件名一致）,由于命令行使用start/stop的不便利，删除相关配合信息
+<service>
+ <id>NginxService</id>
+ <name>NginxService</name>
  <description>nginx</description>  
- <executable>D:\hadoop\nginx-1.12.0\nginx.exe</executable>  
- <logpath>D:\hadoop\nginx-1.12.0\logs\</logpath>  
- <logmode>roll</logmode>  
- <startargument>-p D:\hadoop\nginx-1.12.0</startargument>  
- <stopargument>-p D:\hadoop\nginx-1.12.0 -s stop</stopargument>  
-</service>  
+ <executable>D:/hadoop/nginx/nginx.exe</executable>
+ <logpath>D:/hadoop/nginx/logs/</logpath>
+ <logmode>roll</logmode>
+ <depend></depend>
+</service>
 
 （配置参数说明：https://github.com/kohsuke/winsw/blob/master/doc/xmlConfigFile.md）
  

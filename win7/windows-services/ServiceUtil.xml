@@ -1,10 +1,9 @@
-<service>  
- <id>nginx</id>  
- <name>nginx</name>  
+<service>
+ <id>NginxService</id>
+ <name>NginxService</name>
  <description>nginx</description>  
- <executable>D:\hadoop\nginx-1.12.0\nginx.exe</executable>  
- <logpath>D:\hadoop\nginx-1.12.0\logs\</logpath>  
- <logmode>roll</logmode>  
- <startargument>-p D:\hadoop\nginx-1.12.0</startargument>  
- <stopargument>-p D:\hadoop\nginx-1.12.0 -s stop</stopargument>  
-</service>  
+ <executable>D:/hadoop/nginx/nginx.exe</executable>
+ <logpath>D:/hadoop/nginx/logs/</logpath>
+ <logmode>roll</logmode>
+ <depend></depend>
+</service>
